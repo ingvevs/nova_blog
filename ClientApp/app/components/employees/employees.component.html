@@ -1,0 +1,15 @@
+<div class="row">
+    <div *ngFor="let employee of employees" style="border-bottom: solid 1px #777; padding: 10px">
+        <table>
+            <tr>
+                <td style="padding: 10px">
+                    <img [src]="employee.imageUrl" height="50px" />
+                </td>
+                <td style="padding: 10px">
+                    <p>{{employee.name}} - {{employee.position}}</p>
+                    <p>{{employee.bio}}</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
