@@ -1,0 +1,21 @@
+
+@model List<Employee>
+
+<div class="row">
+    @foreach(var employee in Model)
+    {
+        <div style="border-bottom: solid 1px #777; padding: 10px">
+            <table>
+                <tr>
+                    <td style="padding: 10px">
+                        <img src="@employee.ImageUrl" height="50px" />
+                    </td>
+                    <td style="padding: 10px">
+                        <p>@employee.Name - @employee.Position</p>
+                        <p>@employee.Bio</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    }
+</div>

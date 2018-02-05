@@ -9,7 +9,36 @@
     <link rel="stylesheet" href="~/dist/vendor.css" asp-append-version="true" />    
 </head>
 <body>
-    @RenderBody()
+
+    <div class='container-fluid'>
+    <div class='row'>
+        <div class='col-sm-3'>
+             <div class='main-nav'>
+                <div class='navbar navbar-inverse'>
+                <div class='navbar-header'>
+                    <a class='navbar-brand' href="/">nova_blog</a>
+                </div>
+                <div class='clearfix'></div>
+                    <div class='navbar-collapse collapse'>
+                        <ul class='nav navbar-nav'>
+                            <li>
+                                <a href="/Employees">
+                                    <span class='glyphicon glyphicon-th-list'></span> Employees
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='col-sm-9 body-content'>
+            @RenderBody()
+        </div>
+    </div>
+</div>
+    
+   
+    
 
     @RenderSection("scripts", required: false)
 </body>
